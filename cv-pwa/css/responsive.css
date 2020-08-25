@@ -1,0 +1,31 @@
+@media (max-width: 600px) {
+    #home {
+        height: auto;
+        max-height: none;
+        display: block;
+        padding: 15px 0;
+    }
+    #home .row {
+        display: block;
+    }
+    .timeline .timeline-event .timeline-content {
+        width: calc(100% - 70px);
+    }
+    .timeline .timeline-event .timeline-content .desc {
+        text-align: left;
+    }
+    .timeline .timeline-event .timeline-content .desc h5 {
+        font-size: 20px;
+    }
+    .timeline .timeline-event::before,
+    .timeline .timeline-event::after {
+        left: 19px;
+    }
+    .timeline .timeline-event:nth-child(even) .timeline-content,
+    .timeline .timeline-event:nth-child(odd) .timeline-content {
+        margin-left: 70px;
+    }
+    .timeline .timeline-badge {
+        left: 12px;
+    }
+}

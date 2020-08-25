@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>CV - Hendiyan Ogivano</title>
+    <meta name="description" content="hendriyan ogivano adalah seorang web and mobile developer asal surabaya">
+    <meta name="keywords" content="cv,website,mobile,developer,jasa">
+    <meta name="author" content="Hendriyan Ogivano, hogivano@gmail.com">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow">
+    <meta name="url" content="https://hogivano.web.id/">
+    <meta name="identifier-URL" content="https://hogivano.web.id/">
+    <meta itemprop="image" content="/image/icon/logo-192x192.png">
+
+    <meta name="og:title" content="hogivano">
+    <meta name="og:type" content="website">
+    <meta name="og:url" content="https://hogivano.web.id/">
+    <meta name="og:image" content="/image/icon/logo-192x192.png">
+    <meta name="og:site_name" content="hogivano">
+    <meta name="og:description" content="hendriyan ogivano seorang web and mobile developer asal surabaya">
+
+    <meta name="twitter:card" content="summary_large_ image">
+    <meta name="twitter:site" content="@hogivano">
+    <meta name="twitter:title" content="hogivano">
+    <meta name="twitter:description" content="hendriyan ogivano seorang web and mobile developer asal surabaya">
+
+    <meta name="twitter:creator" content="@hogivano">
+    <meta name="twitter:image:src" content="/image/icon/logo-192x192.png">
+
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav class="grey lighten-5" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="/" class="brand-logo" id="logo-container">
+                    <img src="./image/icon/logo-72x72.png" class="responsive-img" alt="logo hogivano">
+                </a>
+                <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+
+                <ul class="topnav right hide-on-med-and-down"></ul>
+                <ul class="sidenav" id="nav-mobile"></ul>
+            </div>
+        </nav>
+    </header>
+    <main id="main" class="container">
+    </main>
+    <script src="./js/materialize.min.js"></script>
+    <script src="./js/nav.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function() {
+                navigator.serviceWorker
+                    .register("/service-worker.js")
+                    .then(function() {
+                        console.log("Pendaftaran ServiceWorker berhasil")
+                    })
+                    .catch(function() {
+                        console.log("Pendaftran ServiceWorker gagal")
+                    })
+            })
+        } else {
+            console.log("ServiceWorker belum didukung browser ini")
+        }
+    </script>
+</body>
+
+</html>
